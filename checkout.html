@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09130d"><title>Finalizar pedido | Guava Past</title><link rel="stylesheet" href="style.css"><script src="checkout.js" defer></script></head>
+<body class="shop-page">
+<header class="header"><a class="brand" href="index.html"><span class="brand-icon">g<span>+</span></span><span class="brand-name">Guava <b>Past</b><small>BOLOS DE GOIABA</small></span></a><a class="header-cta" href="vendas.html">← Voltar à loja</a></header>
+<main><section class="shop-hero"><p class="eyebrow">LOJA / CHECKOUT</p><h1>Quase na hora de<br><em>adoçar o dia.</em></h1><p>Confira seu pedido e escolha uma forma de pagamento para concluir a simulação.</p></section>
+<section class="checkout-layout" id="checkout-content">
+  <form class="checkout-card" id="checkout-form"><h2>Dados do pedido</h2>
+    <label class="field">Nome para o pedido<input name="name" autocomplete="name" placeholder="Seu nome" required maxlength="70"></label>
+    <label class="field">E-mail (opcional)<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com"></label>
+    <h2 style="font-size:22px;margin-top:25px">Forma de pagamento</h2>
+    <div class="payment-options">
+      <label class="payment-option"><input type="radio" name="payment" value="Pix" checked><span><strong>Pix</strong><br><small>Pagamento instantâneo (simulado)</small></span></label>
+      <label class="payment-option"><input type="radio" name="payment" value="Cartão de crédito"><span><strong>Cartão de crédito</strong><br><small>Opção demonstrativa</small></span></label>
+      <label class="payment-option"><input type="radio" name="payment" value="Cartão de débito"><span><strong>Cartão de débito</strong><br><small>Opção demonstrativa</small></span></label>
+    </div>
+    <div class="payment-info" id="payment-info" aria-live="polite">Pix selecionado. Ao concluir, será exibida uma confirmação fictícia. Nenhuma chave Pix ou cobrança real será gerada.</div>
+    <button class="checkout-button" type="submit" style="margin-top:20px">Confirmar pedido demonstrativo ↗</button>
+    <p class="demo-note">Não informe dados reais de cartão. Este checkout não se conecta a bancos, operadoras ou serviços de pagamento.</p>
+  </form>
+  <aside class="checkout-card"><h2>Resumo do pedido</h2><div id="summary-items"></div><div class="order-summary-total"><span>Total</span><strong id="summary-total">R$ 0,00</strong></div><a class="text-link" href="vendas.html">← Editar carrinho</a></aside>
+</section>
+<section class="checkout-card success-state" id="success-state"><div class="success-mark">✓</div><p class="eyebrow">SIMULAÇÃO CONCLUÍDA</p><h2>Pedido registrado!</h2><p id="success-message" style="color:var(--muted)"></p><p class="demo-note">Esta é apenas uma demonstração escolar. Nenhum pagamento foi realizado.</p><a class="button button-primary" href="index.html">Voltar ao início ↗</a></section>
+</main><footer class="footer"><span>Guava Past • Projeto escolar</span><a class="back-top" href="vendas.html">Voltar à loja</a></footer>
+</body></html>
